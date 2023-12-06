@@ -9,7 +9,7 @@
     <p id="word"></p>
     <button id="btn">Get Only One</button>
     <script>
-        let myRequest = new XHMLHttpRequest();
+        let myRequest = new XMLHttpRequest();
         myRequest.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById('word').innerHTML = myRequest.responseText;
